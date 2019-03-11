@@ -1,0 +1,31 @@
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter,Route } from 'react-router-dom';
+import Header from './common/header/index';
+import { Globalstyle } from './style';
+import { Globalstyle1 } from './statics/iconfont/iconfont';
+import Home from './pages/home/index';
+import Detail from './pages/detail/index';
+import store from './store/index';
+
+class App extends Component {
+  render() {
+    return (
+    <Provider store={store}>
+        <div>
+          <Globalstyle/><Globalstyle1/>
+          <Header/>
+          <BrowserRouter>
+              <div>
+                  <Route path='/' exact component={Home}></Route>
+                  <Route path='/detail' exact component={Detail}></Route>
+              </div>
+          </BrowserRouter>
+        </div>
+    </Provider>
+
+    );
+  }
+}
+
+export default App;
