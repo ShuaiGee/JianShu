@@ -15,6 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### `Redux中间件`
  * Redux-thunk
  * Redux-saga
+ 
 `本项目采用Redux-thunk进行对action的分类处理，根据action的特定类型进行对应的操作`
 ### `React-Router`
 `实现页面之间的跳转以及页面之间参数的传递`
