@@ -3,13 +3,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 ### `npm start`
 Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 --- 
 ## 所用技术
 
 ### `Redux`
  * 数据状态管理框架
  * Redux三原则：store唯一性/只有store能修改自己的属性值/Reducer是一个纯函数
+ 
  `本项目采用React-Redux实现数据管理`
 
 ### `Redux中间件`
